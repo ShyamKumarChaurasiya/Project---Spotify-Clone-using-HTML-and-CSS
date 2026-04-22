@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./assets/logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="sidebar">
+            
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;" >
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <div class="library">
+
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                            <p class="box-p1">Let's find some podcasts to follow</p>
+                            <p class="box-p2">We'll keep you updated on new episodes</p>
+                            <button class="badge">Browse podcasts</button>
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-content">
+
+            <div class="sticky-nav">
+                <div class="left-side">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">    
+                </div>
+                <div class="right-side">
+                    <button class="badge nav-item hide">Explore premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item user-icon"></i>
+                </div>
+                
+            </div>
+
+            <div class="content-scroll">
+                <h2>Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played tracks right now.</p>
+                    </div>
+                </div>
+
+                <h2>Trending now near you</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title">Daylight</p>
+                        <p class="card-info">David Kushner</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Indie Pop</p>
+                        <p class="card-info">The best of indie pop and folk to keep you chill.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" class="card-img">
+                        <p class="card-title">Rock Classics</p>
+                        <p class="card-info">Rock legends & epic songs that continue to inspire.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title">Mahiya Jinna Sohna</p>
+                        <p class="card-info">Darshan Raval</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Chill Vibes</p>
+                        <p class="card-info">Just lean back and enjoy the beat.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" class="card-img">
+                        <p class="card-title">Mega Hits</p>
+                        <p class="card-info">A mega mix of 75 favorites from the last few years.</p>
+                    </div>
+                </div>
+
+                <!-- NEW SECTION: Popular Radio -->
+                <h2>Popular Radio</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <!-- Using a high quality placeholder from Unsplash -->
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=300&q=80" class="card-img">
+                        <p class="card-title">Dance Radio</p>
+                        <p class="card-info">With Drake, The Weeknd, Dua Lipa and more.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Synthwave Mix</p>
+                        <p class="card-info">Retro beats for your late night drives.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=300&q=80" class="card-img">
+                        <p class="card-title">Acoustic Hits</p>
+                        <p class="card-info">Strip back the production and enjoy the raw talent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks.</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - India</p>
+                    <p class="card-info">The most played tracks in India right now.</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img">
+                    <p class="card-title">Viral 50 - Global</p>
+                    <p class="card-info">Your daily update of the most viral tracks.</p>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+
+            
+        </div>
+
+
+        <div class="music-player">
+
+            <div class="album">
+                <img src="./assets/card2img.jpeg" class="album-img">
+                <div class="album-info">
+                    <p class="song-title">Daylight</p>
+                    <p class="singer-name">David Kushner</p>
+                </div>
+                <i class="fa-regular fa-heart album-icon"></i>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img class="player-control-icon" src="./assets/player_icon1.png">
+                    <img class="player-control-icon" src="./assets/player_icon2.png">      
+                    <img class="player-control-icon play-pause" src="./assets/player_icon3.png">               
+                    <img class="player-control-icon" src="./assets/player_icon4.png">               
+                    <img class="player-control-icon" src="./assets/player_icon5.png">
+                </div>
+
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3:33</span>
+                </div>
+
+            </div>
+
+            <div class="control">
+                <i class="fa-solid fa-headphones control-icon"></i>
+                <i class="fa-solid fa-microphone control-icon"></i>
+                <i class="fa-solid fa-bars control-icon"></i>
+                <i class="fa-solid fa-arrows-rotate control-icon"></i>
+                <input type="range" min="0" max="100" step="1" class="vol-bar">
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
